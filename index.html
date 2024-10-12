@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi Bitacora </title>
+    <link rel="stylesheet" href="estilo.css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    \
+    <link href="https://fonts.cdnfonts.com/css/copperplate-gothic-light" rel="stylesheet">
+
+</head>
+<main>
+
+    <body>
+        <header>
+
+            <img src="imagenes/imagen logo.png" alt="">
+        </header>
+        <nav>
+
+            <a href="#tema7">Propiedad position</a> <a href="#tema8">Propiedad
+                display</a><a href="#tema9">Nuevas propiedades de CSS3</a> <a href="#tema10">Animación</a> <a
+                href="#tema11">Referencias avanzadas con CSS3 </a>
+
+        </nav>
+
+
+        <section>
+            <div class="arriba">
+                <h1 id="tema7">Propiedad position</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <p>
+                    <ul>La propiedad position específica el tipo de método de posicionamiento utilizado para un
+                        elemento.</ul>
+                    </p>
+                    <p>
+                    <ul>La propiedad position tiene cinco valores de posición;static,relative,fixed,absolute y sticky.
+                    </ul>
+                    </p>
+                    <p>
+                    <ul>Cada tipo de posición usa las propiedades top, bottom,left y right.</ul>
+                    </p>
+                    <p>
+                    <ul> La propiedad position static, es un tipo de posición ya predeterminado, este funciona mediante
+                        el flujo
+                        normal de la página.</ul>
+                    </p>
+                    <p>
+                    <ul>La propiedad position relative, funciona igual que el primero pero esta permite desplazar el
+                        elemento con las propiedades a partir de la posición original. </ul>
+                    </P>
+                    <p>
+                    <ul> La propiedad position absolute, funciona con el elemento contenedor, el despalzamiento se hara
+                        desde ahi.</ul>
+                    </p>
+                    <p>
+                    <ul> La propiedad position fixed, este funciona con relación a la ventana gráfica (el navegador).
+                    </ul>
+                    </p>
+                    <p>
+                    <ul> La propiedad position sticky se posiciona en funcion de la posición del desplazamiento del
+                        usuario.</ul>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes</h2>
+                <div class="texto2">
+                    <p>Un elemento position static no esta posicionado de ninguna manera especial;siempre se posiciona
+                        de acuerdo con el flujo normal de la página.</p>
+                    <p>El desplazamiento de la caja del posicionamiento relativo (relative) se controla con las
+                        propiedades top, bottom, left, right y z-index. Los demás elementos no
+                        ocuparan el espacio que deja el elemento desplazado.</p>
+                    <p>Cuando un elemento se posicionada de forma absoluta, el resto de elementos de la página se ven
+                        afectados y modifican su posicion.</p>
+                    <p>Un elemento con position fixed simpre permanece en el mismo, incluso si la página se desplaza.
+                    </p>
+                    <div class="imagen">
+                        <img src="imagenes/imagen 8.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abajo">
+                <h2>Resumen</h2>
+                <div class="texto3">
+                    La propiedad position es una propiedad de CSS que permite posicionar los elementos adecuadamente en
+                    un proyecto web.
+                    Esta propiedad tiene cinco valores de posicion:static,relative,fixed,absolute y sticky, position
+                    static ya esta predeterminado por el lenguaje,
+                    por lo que es necesario cambiar a cualquiera de <br>los otros para posicionar algún elemento de otro
+                    modo.
+                    Cada valor de posición funciona de forma diferente en cada elemento.
+                    <p>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <div class="arriba">
+                <h1 id="tema8">Propiedad display</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <p>
+                    <ul>La propiedad display establece el tipo de caja que genera cada elemento.</ul>
+                    </p>
+                    <p>
+                    <ul>La propiedad display es una de las más complejas de CSS 2.1</ul>
+                    </p>
+                    <p>
+                    <ul>Cada elemento html tiene un valor de visualización predeterminado según el tipo de elemento que
+                        sea.</ul>
+                    </p>
+                    <p>
+                    <ul>El valor de visualizacion predeterminado para la mayoría de los elementos es block o inline.
+                    </ul>
+                    </p>
+                    <ul>Un elemento con display block, comienza en una nueva línea y ocupa todo el ancho disponible.
+                    </ul>
+                    <p>
+                    <ul>Un elemento con display inline, no comienza en una nueva línea y solo ocupa el ancho que sea
+                        necesario.</ul>
+                    </p>
+                    <p>
+                    <ul>También existe la propiedad display inline-block, este permite establecer un ancho y una altura
+                        en el elemento.</ul>
+                    </p>
+                    <p>
+                    <ul>Y por último también esta el display none, este hace que el elemento no genere ninguna caja.
+                        <br> El elemento desaparece por completo del navegdor visualmente pero sigue estando en
+                        el proyecto web.
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes</h2>
+                <div class="texto2">
+
+                    <p>Los elementos con display block son los siguientes: div,h1-h6,p,form,header,footer y section.</p>
+                    <p>Los elementos con display inline son los siguientes:span,a y img.</p>
+                    <p>La propiedad display inline-block respeta los margin y padding, al contrario de inline que no son
+                        respetados.
+                        Tampoco agrega un salto de línea despues del elemento, por lo que el elemento puede aliniarse a
+                        otros elementos.</p>
+                    <p>Si se utiliza un display none sobre un elemento todos sus descendientes también desaparecen por
+                        completo de la página.</p>
+                    <div class="imagen">
+                        <img src="imagenes/imagen 9.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abajo">
+                <h2>Resumen</h2>
+                <div class="texto3">
+
+                    <p>La propiedad display es la responsable de controlar cómo se ven los tipos de cajas que genera
+                        cada elemento y de cómo interactúan entre ellas,
+                        podiendo cambiar su apariencia modificando el valor. Cada elemento que tiene display tiene un
+                        valor de visualización predeterminado <br> que seria block, inline, inline-block y none. </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="arriba">
+                <h1 id="tema9">Nuevas propiedades de CSS3</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <p>
+                    <ul>La nuevas propiedades de CSS3 buscan reducir el uso necesario de Javascript.</ul>
+                    </p>
+
+                    <p>
+                    <ul>Las propiedades de CSS3 son las siguientes: </ul>
+                    </p>
+                    <p>
+                    <ul>Box-radius:Genera esquinas redondeadas para la caja formada por un elemento.</ul>
+                    </p>
+                    <p>
+                    <ul>Box-shadow:Crea sombras para la caja formada por el elemento. </ul>
+                    </p>
+                    <p>
+                    <ul>@font-face:Esta regla nos permite cargar y usar cualquier fuente que necesitemos.</ul>
+                    </p>
+                    <p>
+                    <ul>Linear-gradient:Se aplica en background o background-image para agregar un gradiente lineal.
+                    </ul>
+                    </p>
+                    <p>
+                    <ul>Radial-gradient::Se aplica en background o background-image para agregar un gradiente
+                        radial.</ul>
+                    </p>
+                    <p>
+                    <ul>RGBA o HSLA:Son una de las mejoras de RGB y HSL con un canal alfa que específica la opacidad del
+                        color y saturacion</ul>
+                    </p>
+                    <p>
+                    <ul>Outline:Genera un borde alejado de un borde original del elemento.</ul>
+                    </p>
+                    <p>
+                    <ul>Border-image:Crea un borde con una imagen personalizada.</ul>
+                    </p>
+                    <p>
+                    <ul>Transform:Modifica la forma de un elemento.</ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes</h2>
+                <div class="texto2">
+
+                    <p>Para algunas propiedades de CSS3 se deben usar los prefijos -moz-, -o- y -webkit- para que
+                        funcionen <br>
+                        en navegadores basados en motores Gecko y WebKit, como Firefox, Safari y Google Chrome</p>
+                    <p>En border radius, el primer 
+                        parámetro determina la curvatura horizontal y el segundo la vertical, 
+                        otorgando la posibilidad de crear una elipse.</p>
+                    <p>Un border-image necesita ser declarado previamiente con las propiedades border o border-with, y
+                        toma al menos tres parámetros: <br>La url de la imagen,
+                        el tamaño de las plezas que seran tomadas de la imagen para construir el borde y una palabra
+                        clave que específica como estas plezas serán ubicados alrededor del elemento. </p>
+
+                    <div class="imagen">
+                        <img src="imagenes/imagen 10.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abajo">
+                <h2>Resumen</h2>
+                <div class="texto3">
+
+                    <p>El CSS3 tiene propiedades que cubren el diseño,estilos web, estilos de movimiento de Javascript con
+                        tal de reducir su uso. Las propiedades son:box-radius,
+                        @font-face,box-shadow,linear-gradient,radial-gradient,RGBA, HSLA,outline,Border-image y
+                        transform, cada una de ellas tiene diferentes funciones y permite dar una mejor apariencia al
+                        proyecto web sin tener tanto conocimiento de Javascript.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section>
+            <div class="arriba">
+                <h1 id="tema10">Animación</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <p>
+                    <ul>CSS tiene permitido animar la mayoría de los elementos de Html sin usar Javascript.</ul>
+                    </p>
+                    <p>
+                    <ul>Cuando específica estilos CSS dentro de la regla @keyframes, la animación cambiara del estilo
+                        actual al estilo nuevo.</ul>
+                    </p>
+
+                    <p>
+                    <ul>Se utiliza animation duration para especificar cuanto tiempo debe transcurrir una animación para
+                        completar el ciclo.</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation-iteration-count para especificar el numero de veces que se debe
+                        reproducir una animación.</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation-delay para especificar un retraso para el inicio de una animación.</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation-play-state para especificar si la animación se esta ejecutando o esta en
+                        pausa.</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation timing-function para especifica la curva de velocidad de la animación
+                        (linear,ease, ease-in, ease-out,ease-in-out y cubic-bezier).</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation direction para especificar si una animación debe reproducirse hacia
+                        adelante, hacia atras o en ciclos alternos.</ul>
+                    </p>
+                    <p>
+                    <ul>Se utiliza el animation fill-mode para especificar un estilo para el elemento cuando la
+                        animación esta en pausa.</ul>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes</h2>
+                <div class="texto2">
+                    <p>
+                    <p>
+                        Para que una animación funcione se debe vincular a un elemento de la siguiente forma: <br>
+                        div { <br>
+                        animation-name:animo1; <br>
+                        } <br>
+                        @keyframes animo1 { <br>
+
+                        from {background-color:red;} <br>
+                        to {background-color:yellow;} <br>
+                        } </p>
+                    <p>La duración de una animación esta predeterminado con 0s por lo que se tiene que cambiar la
+                        duración para que sea una animación real.</p>
+                    <p>Se utiliza animation, una propiedad para configurar todas las propiedades de la animación.</p>
+
+
+
+                    <div class="imagen">
+                        <img src="imagenes/imagen 11.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abajo">
+                <h2>Resumen</h2>
+                <div class="texto3">
+
+                    <p>La animación es otra de la propiedades de CSS3 que da un estilo de movimiento a los elementos.
+                        Para agregar una animación se utiliza la regla @keyframe y
+                        con esta regla se debe de especificar el nombre de la animación, la duración, el número de veces 
+                        que debe mostrarse la animación, si la animación esta en pausa o no,que curva de velocidad
+                        tiene,si va a reproducirse en hacia adelante o hacia atras, entre otros.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="arriba">
+                <h1 id="tema11">Referencias avanzadas con CSS3</h1>
+            </div>
+
+            <div class="izquierda">
+                <h2>Ideas principales</h2>
+                <div class="texto1">
+                    <p>
+                    <ul>CSS3 tiene referencias avanzadas en los atributos y elementos de Html.</ul>
+                    </p>
+                    <p>
+                    <ul>El primero es el atributo id, que es el nombre que identifica al elemento. </ul>
+                    </p>
+                    <p>
+                    <ul>El otro atributo es el class, este es mas flexible y puede ser asignado a varios elementos del
+                        Html en el documento que comparten un diseño similar.</ul>
+                    </p>
+                    <p>
+                    <ul>En cuanto referencias avanzadas en los elementos, existe el selector de elementos, este es una
+                        regla que selecciona todos los elementos de un tipo especifico en el documento Html.</ul>
+                    </p>
+                    <p>
+                    <ul>También estan las pseudoclases:
+                        nth-child(),nth-child(odd):nth-child(even),first-child,last-child, only-child y not(). </ul>
+                    </p>
+                    <p>
+                    <ul>También hay referencias avanzadas en el selector atributo que este selecciona elementos Html en
+                        funcion de la presencia o el valor de uno de sus atributos.</ul>
+                    </p>
+                    <p>
+                    <ul>Y por último esta el selector de relación, que permite seleccionar elementos basados en su
+                        relación con otros elementos dentro del documento.</ul>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="derecha">
+                <h2>Apuntes</h2>
+                <div class="texto2">
+
+                    <p>El pseudoclase nth-child() nos permite encontrar un hijo especifico. </p>
+                    <p>El pseudoclase nth-child(odd):nth-child(even) se utilizan para seleccionar elementos con base en
+                        su posición en la secuencia de sus hijos, para alternar entre elementos impares y pares. </p>
+                    <p>Los pseudoclases first-child y last-child seleccionan al primer y ultimo hijo.</p>
+                    <p>El pseudoclase only-child afecta a un elemento siempre y cuando sea el único hijo disponible.
+                    </p>
+                    <div class="imagen">
+                        <img src="imagenes/imagen 12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="abajo">
+                <h2>Resumen</h2>
+                <div class="texto3">
+
+                    <p>CSS3 también tiene referencias avanzadas en los atributos y elementos de Html que se utilizan
+                        para delimitar los elementos Html de nuestra página web a los que queremos aplicar estilo.Estas
+                        referencias son selectores de atributos y elementos, asi como también de relación.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </body>
+    <footer></footer>
+</main>
+
+</html>
